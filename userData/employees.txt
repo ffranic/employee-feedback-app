@@ -1,0 +1,7 @@
+1,ivanIvic@teampulse.hr,$2a$10$2FhCKdbZU1haPQCWofoOHObzs6ypYW1gCDV5VbYF2bdAeC5kdyomq,MANAGER
+2,anaAnic@teampulse.hr,$2a$10$rjE1MXEsqjrVfAALNCJLHuzY46FIXa9mUcSuqur5XkhH9eA40WfSq,ADMIN
+3,markoMarkic@teampulse.hr,$2a$10$/MKqqalUwfGnRIb4KNS.JupMMB8tEh5evliWd6VVt7xO.Hjo7C86K,EMPLOYEE
+4,arthurMorgan@teampulse.hr,$2a$10$gU2zrzOjpHHt82w22QxILuUrQ4vvirwxizLpiw9KSjVA6xeoxDJsG,MANAGER
+5,johnMarston@teampulse.hr,$2a$10$FffQpPWI06Gmio/JrKz54OpW0G4S/dcVxlNDNb9pxIncvYoExgsvS,EMPLOYEE
+37,nikoBelic@teampulse.hr,$2a$10$2aIe/BHkkQugCbhqPsgBi.PaRnZgIWWM6s4QHNmOQMC909iRCVnMa,EMPLOYEE
+37,nikoBelic@teampulse.hr,$2a$10$i52WFLsddRCtjnoX8d8P.eY5bNtNMlAlvhZDMRsuzcGIgEY3i2jrW,EMPLOYEE

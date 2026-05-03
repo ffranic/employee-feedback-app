@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.javafx.tvz.projektni_zadatak.controller.MenuController">
+
+    <menus>
+        <Menu text="Home">
+            <items>
+                <MenuItem onAction="#goToHomeView" text="Return to home screen" />
+            </items>
+        </Menu>
+        <Menu fx:id="employeesMenu" text="Employees">
+            <items>
+                <MenuItem fx:id="searchEmployees" onAction="#showEmployeeSearchView" text="Search" />
+                <MenuItem fx:id="saveEmployees" onAction="#showEmployeeSaveView" text="Add" />
+                <MenuItem fx:id="updateEmployees" onAction="#showEmployeeUpdateView" text="Update" />
+                <MenuItem fx:id="deleteEmployees" onAction="#showEmployeeDeleteView" text="Remove" />
+            </items>
+        </Menu>
+        <Menu fx:id="feedbacksMenu" text="Feedbacks">
+            <items>
+                <MenuItem fx:id="searchFeedbacks" onAction="#showFeedbackSearchView" text="Search" />
+                <MenuItem fx:id="saveFeedbacks" onAction="#showFeedbackSaveView" text="Add" />
+            </items>
+        </Menu>
+        <Menu fx:id="performanceMenu" text="Performance reviews">
+            <items>
+                <MenuItem fx:id="searchReviews" onAction="#showPerformanceReviewSearchView" text="Search" />
+                <MenuItem fx:id="saveReviews" onAction="#showPerformanceReviewSaveView" text="Add" />
+            </items>
+        </Menu>
+      <Menu mnemonicParsing="false" text="Score">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#showEmployeeScore" text="Employee score" />
+        </items>
+      </Menu>
+      <Menu fx:id="logMenu" mnemonicParsing="false" text="Log">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#showEmployeeLog" text="Employees" />
+            <MenuItem mnemonicParsing="false" onAction="#showFeedbackLog" text="Feedbacks" />
+            <MenuItem mnemonicParsing="false" onAction="#showReviewLog" text="Reviews" />
+        </items>
+      </Menu>
+    </menus>
+</MenuBar>

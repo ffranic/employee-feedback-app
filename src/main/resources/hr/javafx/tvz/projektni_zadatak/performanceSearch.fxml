@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.javafx.tvz.projektni_zadatak.controller.PerformanceReviewSearchController" stylesheets="@styles.css">
+   <children>
+       <fx:include source="menu.fxml" />
+      <GridPane prefHeight="600.0" prefWidth="800.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="491.4000244140625" minWidth="10.0" prefWidth="450.4000244140625" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.39997558593745" minWidth="10.0" prefWidth="350.39997558593745" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Performance reviews" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Choose a period:" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="35.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Sort by:" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="performanceReviewTableView" prefHeight="125.0" prefWidth="801.0" GridPane.columnSpan="2" GridPane.rowIndex="4" GridPane.rowSpan="2">
+              <columns>
+                <TableColumn fx:id="reviewIdColumn" prefWidth="55.20001220703125" text="ID" />
+                <TableColumn fx:id="reviewEmployeeIdColumn" prefWidth="90.39999389648438" text="Employee id" />
+                  <TableColumn fx:id="reviewPeriodFromColumn" prefWidth="105.60000610351562" text="From" />
+                  <TableColumn fx:id="reviewPeriodToColumn" prefWidth="112.79998779296875" text="To" />
+                  <TableColumn fx:id="reviewSummaryColumn" prefWidth="349.5999755859375" text="Summary" />
+                  <TableColumn fx:id="reviewRatingColumn" prefWidth="92.80010986328125" text="Rating" />
+              </columns>
+            </TableView>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <DatePicker fx:id="reviewPeriodFromDatePicker">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </DatePicker>
+                  <DatePicker fx:id="reviewPeriodToDatePicker" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </GridPane.margin>
+                  </DatePicker>
+               </children>
+            </GridPane>
+            <ComboBox fx:id="reviewSortingComboBox" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#search" text="Search" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>
